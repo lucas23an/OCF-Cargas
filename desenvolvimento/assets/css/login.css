@@ -1,0 +1,60 @@
+
+.modal-login{
+  position: absolute;
+  margin-top: 10%;
+  background: #efebe9;
+  padding-bottom: 2em;
+  border-radius: 5px;
+  margin-bottom: 10em;
+}
+
+.title-login{
+  text-align: center;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+.row .text-center .btn-login{
+  margin: 1em 0;
+  width: 50%;
+  padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.esqueceu{
+  font-weight: bold;
+  color: #374552;
+  margin: 1em 0;
+}
+
+.btn-login-cadastro{
+  width: 100%;
+  border-radius: 0 !important;
+}
+
+.login:hover,
+.cadastrar:hover{
+  color: #fff !important;
+}
+
+.login{
+  padding: 20px 0 !important;
+  color: #fff;
+  background-color: #286090;
+}
+
+.cadastrar{
+  padding: 20px 0 !important;
+  color: #fff;
+  background-color: #374552;
+}
+
+.row-btn{
+  margin-bottom: 5em;
+}
+
+.no-padding{
+  padding-left: 0;
+  padding-right: 0;
+}
