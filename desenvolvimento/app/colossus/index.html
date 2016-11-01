@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/colossus1.jpg" />
+        <title>Colossus</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="../../assets/css/style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <header id="header">
+                <div class="container">
+                    <div class="nome">
+                        Colossus
+                    </div>
+                    <nav id="nav" style="margin-top: 15px;">
+                        <div class="opener-holder">
+                            <a href="#" class="nav-opener"><span></span></a>
+                        </div>
+                        <div class="nav-drop">
+                            <ul>
+                                <li><a href="#inicio" class="scroll">Início</a></li>
+                                <li><a href="#quemsomos" class="scroll">Como Funciona</a></li>
+                                <li><a href="#equipe" class="scroll">Criador</a></li>
+                                <li><a href="#contato" class="scroll">Experimente</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header><br><br>
+            <section id="inicio" class="logo">
+                <img class="img-responsive" style="display: table; margin: 0 auto; bottom: -5px;" src="img/colossus3.png">
+            </section>
+            <div class="visual">
+                <p class="faca">
+                    Faça aqui o seu projeto
+                </p>
+            </div>
+            <section id="quemsomos" class="main">
+                <br><br><br>
+                <div class="container" style="margin-top: 7px">
+                    <div class="row">
+                        <div class="text-box col-md-offset-1 col-md-10">
+                            <h2>Como Funciona</h2><br>
+                            <p class="justificado">O Colossus é um Framework que auxilia o programador BackEnd no desenvolvimento de qualquer projeto,
+                                atravez dele o programador irá ganhar mais tempo no desenvolvimento do projeto, ele da a base "Molde" do código
+                                fonte, ex: View do painel, Controller, Model e Conexão com o Banco. <br><br>
+                                Possibilitando assim gastar uma hora para fazer o mesmo que levaria um mês. Para utilizar é bem simples basta ter em 
+                                mãos o nome do banco de dados, as tabelas e as colunas. Atravez do Colossus você terá o CRUD de cada tabela do seu 
+                                banco de dados sql.
+                            </p><br>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="equipe">
+                <div class="cycleGallery criador">
+                    <br><br>
+                    <div class="text-box" style="margin-top: 8px">
+                        <h2 style="color: #c0c0c0">Criador</h2>
+                    </div>
+                    <br><br>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="img-box" style="margin: 0 auto; display: table">
+                                <div class="img-holder"><img src="img/saulo.jpg" height="200" width="200"></div>
+                                <div class="text-holder">
+                                    <h2 style="color: #fff">Saulo Fernandes</h2>
+                                    <a href="#" style="color: #c0c0c0">saulofernandes.costa@hotmail.com</a>
+                                </div>
+                            </div>
+                        </div><br>
+                    </div>
+                    <div class="" style="display: table">
+                        <div class="text-box col-md-offset-1 col-md-10">
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contato" class="area">
+                <br><br><br><br>
+                <div class="container">
+                    <div class="subscribe">
+                        <div class="text-box col-md-offset-1 col-md-10">
+                            <h2>Faça aqui o Seu CRUD</h2>
+                        </div>
+                        <div class="boxed-grey">
+                            <form id="form-inserir" method="post">
+                                <input name="gerarCrud" type="hidden" class="form-control"/>
+                                <div class="row" style="text-align: left;">
+                                    <div class="col-md-12">
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-6">
+                                            <table style='width:100%'>
+                                                <tr>
+                                                    <td>
+                                                        <label>Nome do Banco</label>
+                                                        <input name="nomeBanco" type="text" class="form-control" required/>
+                                                    </td>
+                                                    <td style="float: right">
+                                                        <label>Tabela</label><br>
+                                                        <button title="Mais" type="button" class="btn btn-success" onclick="addTabela(new Date().getTime(), Math.floor((Math.random() * 1000) + 1));">
+                                                            <i class="fa fa-plus"></i>
+                                                        </button><br>
+                                                    </td>
+                                                </tr>
+                                            </table><br>
+                                        </div>
+                                        <div class="col-md-3"></div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-8">
+                                            <div id="tabela"></div>
+                                            <br><br>
+                                            <button data-toggle="modal" data-target="#colossus" type="submit" class="btn btn-success pull-right">Enviar</button>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>                   
+                    </div>
+                </div>
+            </section>
+            <footer id="footer">
+                <div class="container">
+                    <div class="footer-holder">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="logo2"><a href="#"><img src="img/logo.png" style="max-width: 90px" ></a></div><br>
+                                <p>A solução (R)ápida e (M)oderna para a sua empresa.<br />
+                                    TECNOLOGIA & INOVAÇÃO.</p>
+                            </div>
+                            <div class="col-md-2">
+                                <h4>Navegação</h4>
+                                <ul>
+                                    <li><a href="#inicio" class="scroll">Início</a></li>
+                                    <li><a href="#quemsomos" class="scroll">Como Funciona</a></li>
+                                    <li><a href="#equipe" class="scroll">Criador</a></li>
+                                    <li><a href="#contato" class="scroll">Experimente</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="text-holder">
+                                    <h4>Contato</h4>
+                                    <address>(62) 9109-2968</address>
+                                    <h4>Endereço</h4>
+                                    <address>Rua São Jorge N° 150 Bairro São Jorge - Anápolis / GO</address><br>
+                                </div>
+                            </div> 
+                            <div class="col-md-3">
+                                <div class="text-frame">
+                                    <h4>Informações Pessoais</h4>
+                                    <p>Desenvolvedor Web na empresa RM Solutions.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12" style="text-align: center;">
+                                <br>
+                                <p>&copy; Copyright 
+                                    <script type="text/javascript">
+                                        data = new Date();
+                                        ano = data.getFullYear();
+                                        document.write (ano);
+                                    </script> - Saulo Fernandes. Todos os direitos reservados.</p>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>        
+        <div class="modal fade modal-primary" id="colossus" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div style="width:100%">
+                <div class="modal-content row">
+                    <div class="modal-header" style="padding-left: 50px;padding-right: 50px;">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Parabéns, CRUD gerado!</h4>
+                    </div>
+                    <div class="col-md-12">
+                        <img style="width: 100%" src="img/colossus1.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="../../assets/js/jquery.main.js"></script>
+        <script src="js/openClose.js"></script>
+        <script src="ajax/Colossus.js"></script>
+        <script>
+            $(function () {
+                $('#form-inserir').submit(function (e) {
+                    e.preventDefault();
+                    formGerador('Colossus','#form-inserir');
+                });
+            });
+        </script>
+        <script>
+            function addTabela(time, id) { 
+                $("#tabela").append("<div class='col-md-12' id='tabela" + time + "'><table style='width:100%'>"+
+                    "<tr class='cor-cima'><th class='td-tabela'>"+
+                    "<input placeholder='tabela' name='nomeTabela[]' type='text' class='form-control' required/>"+
+                    "</th><th class='td-tabela'>"+
+                    "<button style='margin-top: -10px' title='Menos' type='button' class='btn btn-danger' onclick='tiraTabela(" + time + ");'>"+
+                    "<i class='fa fa-minus'></i></button></th><th class='td-tabela'>"+
+                    "<button style='margin-top: -10px' title='Mais' type='button' class='btn btn-success' onclick='addColuna(new Date().getTime(), " + id + ");'>"+
+                    "<i class='fa fa-plus'></i></button></th></tr></table>"+
+                    "<div id='coluna" + id + "'></div><br></div>");
+            }
+            function tiraTabela(time) {
+                document.getElementById('tabela'+ time +'').remove();
+
+            }
+        </script>
+        <script>
+            function addColuna(time, id) { 
+                var chave = new Date().getTime();
+                $("#coluna" + id + "").append("<div class='col-md-12' id='coluna" + time + "'><table style='width:100%'>"+
+                    "<tr id='coluna" + id + "' class='cor-baixo'><td class='td-tabela'>"+
+                    "<input placeholder='coluna' name='nomeColuna[]' type='text' class='form-control' required/>"+
+                    "</td><td class='td-tabela'>"+
+                    "<select name='tipoColuna[]' class='form-control' required>"+
+                    "<option value=''>tipo</option>"+
+                    "<option value='hidden'>hidden</option>"+
+                    "<option value='text'>text</option>"+
+                    "<option value='password'>password</option>"+
+                    "<option value='email'>email</option>"+
+                    "<option value='date'>date</option>"+
+                    "<option value='number'>number</option>"+
+                    "<option value='time'>time</option>"+
+                    "</select></td><td class='td-tabela'>"+
+                    "<select name='nulo[]' class='form-control' required>"+
+                    "<option value='notNull'>not null</option>"+
+                    "<option value='null'>null</option>"+
+                    "</select></td><td class='td-tabela'>"+
+                    "<button style='margin-top: -10px' type='button' class='btn btn-success' onclick='addChave(" + chave + ");'>"+
+                    "<i class='fa fa-key'></i></button></td><td class='td-tabela'>"+
+                    "<button style='margin-top: -10px' title='Menos' type='button' class='btn btn-danger' onclick='tiraColuna(" + time + ");'>"+
+                    "<i class='fa fa-minus'></i></button></td></tr></table>"+
+                    "<div id='chave" + chave + "' style='display: none'><table style='width:100%'>"+
+                    "<tr id='chave" + id + "' class='cor-chave'><td class='td-tabela'>"+
+                    "<input placeholder='tabela' name='tabelaChave[]' type='text' class='form-control'/>"+
+                    "</td><td class='td-tabela'>"+
+                    "<input placeholder='id' name='idChave[]' type='text' class='form-control'/>"+
+                    "</td><td class='td-tabela'>"+
+                    "<input placeholder='referencia' name='referenciaChave[]' type='text' class='form-control'/>"+
+                    "</td><td class='td-tabela'>"+
+                    "<button style='margin-top: -10px' title='Menos' type='button' class='btn btn-danger' onclick='tiraChave(" + chave + ");'>"+
+                    "<i class='fa fa-minus'></i></button></td></tr></table></div>");
+            }
+            function tiraColuna(time) {
+                document.getElementById('coluna'+ time +'').remove();
+            }
+        </script>
+        <script>
+            function addChave(id) { 
+                document.getElementById("chave" + id + "").style.display = 'block';
+            }
+            function tiraChave(id) {
+                document.getElementById("chave" + id + "").style.display = 'none';
+            }
+        </script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event) {
+                    event.preventDefault();
+                    $('html,body').animate({
+                        scrollTop: $(this.hash).offset().top
+                    }, 800);
+                });
+            });
+        </script>
+    </body>
+</html>
