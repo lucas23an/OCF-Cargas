@@ -21,6 +21,21 @@
                 <i class="fa fa-cogs" aria-hidden="true"></i> <span>Configuração</span>
               </a>
             </li>
+            <li>
+              <a href="lances.php">
+                <i class="fa fa-cogs" aria-hidden="true"></i> <span>Lances</span>
+              </a>
+            </li>
+            <li>
+              <a href="remessa.php">
+                <i class="fa fa-cogs" aria-hidden="true"></i> <span>Remessa</span>
+              </a>
+            </li>
+            <li>
+              <a href="transportadoras.php">
+                <i class="fa fa-cogs" aria-hidden="true"></i> <span>Transporte</span>
+              </a>
+            </li>
         </ul>
     </section>
 </aside>
